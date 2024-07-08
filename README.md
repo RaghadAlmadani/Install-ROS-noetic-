@@ -85,3 +85,20 @@ To install this tool and other dependencies for building ROS packages, run:
 ~~~ Linux
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ~~~
+
+6.5.1 **Initialize rosdep**
+Before you can use many ROS tools, you will need to initialize rosdep. rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS. If you have not yet installed rosdep, do so as follows.
+~~~ Linux
+sudo apt install python3-rosdep
+~~~
+With the following, you can initialize rosdep.
+~~~ Linux
+sudo rosdep init
+rosdep update
+~~~
+
+Finally to Start the ROS (master node)
+~~~ Linux
+roscore
+~~~
+![Screenshot 2024-07-07 091532](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/084e4492-e71e-45f4-80f4-0e849a757fb6)
