@@ -33,4 +33,11 @@ choose the disk as in the photo
 ![Screenshot 2024-07-08 220819](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/4cf13add-8888-4722-8f92-f44b8fba792f)
 then choose a disk file.
 
+4- Now you are ready to start ![Screenshot 2024-07-08 221747](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/4cb8fbc4-95c1-4fa6-83b4-8d8742485a71)
+press Start or Ubuntu as shown then choose Install and fill your information.
+
+5- Open the Terminal  
+![Screenshot 2024-07-08 222308](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/09a16793-4891-4a6f-8e86-4a4a1b9f1dc2)
+
+6- Write down the following comand or vist [Wiki ROS]
 
