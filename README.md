@@ -39,6 +39,49 @@ press Start or Ubuntu as shown then choose Install and fill your information.
 5- Open the Terminal  
 ![Screenshot 2024-07-08 222308](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/09a16793-4891-4a6f-8e86-4a4a1b9f1dc2)
 
-6- Write down the following command or vist for more information [Wiki ROS](http://wiki.ros.org/ROS/Installation)
+6- Write down the following command or vist for more information [Wiki ROS](http://wiki.ros.org/ROS/Installation) <br>
 
+6.1 **Setup your sources.list**
+Setup your computer to accept software from packages.ros.org.
+~~~ Linux
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+~~~
 
+6.2 **Set up your keys**
+~~~ Linux
+sudo apt install curl 
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+~~~
+
+6.3 **Installation**
+First, make sure your Debian package index is up-to-date:
+~~~ Linux
+sudo apt update
+~~~
+
+then we will Install Desktop-Full: Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages
+~~~ Linux
+sudo apt install ros-noetic-desktop-full
+~~~
+
+6.4 **Environment setup**
+You must source this script in every bash terminal you use ROS in.
+~~~ Linux
+source /opt/ros/noetic/setup.bash
+~~~
+It can be convenient to automatically source this script every time a new shell is launched. These commands will do that for you.
+
+Bash
+> [!CAUTION]
+> If you have more than one ROS distribution installed, ~/.bashrc must only source the setup.bash for the version you are currently using.
+~~~ Linux
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+~~~
+
+6.5 **Dependencies for building packages**
+Up to now you have installed what you need to run the core ROS packages. To create and manage your own ROS workspaces, there are various tools and requirements that are distributed separately. For example, [rosinstall](https://wiki.ros.org/rosinstall) is a frequently used command-line tool that enables you to easily download many source trees for ROS packages with one command.<br>
+To install this tool and other dependencies for building ROS packages, run:
+~~~ Linux
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+~~~
