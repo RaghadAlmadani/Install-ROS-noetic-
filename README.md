@@ -39,7 +39,7 @@ press Start or Ubuntu as shown then choose Install and fill your information.
 5- Open the Terminal  
 ![Screenshot 2024-07-08 222308](https://github.com/RaghadAlmadani/Install-ROS-noetic-/assets/173769867/09a16793-4891-4a6f-8e86-4a4a1b9f1dc2)
 
-6- Write down the following command or vist for more information [Wiki ROS](http://wiki.ros.org/ROS/Installation) <br>
+6- Write down the following command or vist [Wiki ROS](http://wiki.ros.org/ROS/Installation) for more information<br>
 
 6.1 **Setup your sources.list**
 Setup your computer to accept software from packages.ros.org.
